@@ -1,0 +1,215 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-hover: hsl(244, 83%, 68%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+/*--- CSS Reset ---*/
+/*--- https://piccalil.li/blog/a-modern-css-reset/ ---*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*---------------------*/
+/*--- End CSS Reset ---*/
+/*---------------------*/
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.card {
+  width: 28.125rem;
+  background-color: white;
+  color: var(--desaturated-blue);
+  border-radius: 20px;
+  margin: 3.125rem auto;
+  overflow: hidden;
+}
+.title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1.875rem;
+  font-size: 1.125rem;
+}
+
+.container > * {
+  margin: 0.813rem 0;
+}
+
+.container strong {
+  color: var(--dark-blue);
+}
+
+.order-description {
+  line-height: 1.563rem;
+}
+
+.plan-container {
+  font-size: 1rem;
+  background-color: var(--very-pale-blue);
+  padding: 1.563rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-container a {
+  color: var(--bright-blue);
+  text-decoration: none;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+.plan-container a:hover {
+  color: var(--bright-blue-hover);
+  text-decoration: none;
+}
+
+.plan-description {
+  margin-right: 4.688rem;
+  line-height: 1.25rem;
+}
+
+button {
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: white;
+  color: var(--desaturated-blue);
+  border: none;
+  margin-top: 1.375rem;
+}
+
+.cancel-button:hover {
+  color: black;
+}
+
+.proceed-button {
+  background-color: var(--bright-blue);
+  padding: 1rem 0;
+  color: var(--clr-white);
+  box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed-button:hover {
+  background-color: var(--bright-blue-hover);
+}
+/*--- Mobile Format ---*/
+@media (max-width: 24rem) {
+  .card {
+    width: 22.125rem;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    margin: 3.125rem auto;
+    overflow: hidden;
+  }
+  .plan-container a {
+    text-decoration: none;
+  }
+  .container strong {
+    padding-left: 0.4rem;
+  }
+  .container p {
+    padding-left: 0.4rem;
+  }
+}
