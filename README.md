@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/nbailey939/order-summary)
+- Live Site URL: [Add live site URL here](https://nbailey939.github.io/order-summary/)
 
 ### Built with
 
@@ -38,5 +38,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Github - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@nbailey939](https://www.frontendmentor.io/profile/nbailey939)
+- Github - [@nbailey939](https://github.com/nbailey939)
